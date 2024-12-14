@@ -204,6 +204,10 @@ header p{
     transform: translateY(10px);
 }
 
+.phone-number{
+    opacity: 0;
+}
+
 .phone-number p{
     max-width: 140px;
 }
