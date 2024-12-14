@@ -191,3 +191,14 @@ header p{
     width: 8.5px;
     transform: translate(5px,-49px) rotate(97deg);
 }
+
+.contacts{
+    display: flex;
+    gap: 20px;
+    transform: translate(0,20px);
+}
+
+.contacts-image{
+    height: 30px;
+    transform: translateY(10px);
+}
