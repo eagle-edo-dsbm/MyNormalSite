@@ -1,11 +1,12 @@
 body{
-    margin: 40px;
+    margin: 0;
     background-color: black;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
+    margin: 40px;
     color: white;
     height: 100px;
     width: auto;
@@ -208,7 +209,4 @@ header p{
 }
 
 @media (max-width: 900px) and (max-height: 900px){
-    body{
-        width: 130vw;
-    }
 }
