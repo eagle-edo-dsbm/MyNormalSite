@@ -203,6 +203,12 @@ header p{
     cursor: pointer;
 }
 
+.email{
+    position: absolute;
+    transform: translate(50px,30px);
+    font-size: 1em;
+    text-transform: none;
+}
 
 .contacts-image{
     height: 30px;
