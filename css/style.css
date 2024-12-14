@@ -208,25 +208,19 @@ header p{
     max-width: 140px;
 }
 
-@media (min-width: 400px) and (max-width: 2400px){
-    body{
-        margin: 0;
-        padding: 0;
+@media (max-width: 540px) {
+    body {
+        margin: 20px;
+        font-size: 14px; /* Adjust text size for readability */
     }
 
-    .menu{
-        display: block;
+    header {
+        flex-wrap: wrap; /* Allow elements to stack */
+        gap: 20px;
     }
 
-    .catalogue{
-        display: none;
-    }
-
-    .contacts{
-        transform: translate(-30px, 18px);
-    }
-
-    .phone-number{
-        transform: translate(-30px, 0);
+    .phone-number p {
+        font-size: 12px;
+        text-align: center; /* Align phone number properly */
     }
 }
