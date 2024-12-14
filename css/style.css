@@ -208,5 +208,18 @@ header p{
     max-width: 140px;
 }
 
-@media (max-width: 900px) and (max-height: 900px){
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 20px; /* Уменьшение внешних отступов */
+    }
+
+    .phone-number p {
+        font-size: 16px;
+        text-align: center; /* Центрирование номера телефона */
+    }
+
+    header {
+        flex-wrap: wrap; /* Перенос элементов на следующую строку */
+        gap: 30px; /* Меньший промежуток между элементами */
+    }
 }
