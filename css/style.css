@@ -1,0 +1,193 @@
+body{
+    margin: 40px;
+    background-color: black;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: white;
+    height: 100px;
+    width: auto;
+    display: flex;
+    gap: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(150,170,150);
+}
+
+header p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo-image{
+    transform: translateY(-20%);
+    height: 150px;
+    width: auto;
+}
+
+.line{
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 25px;
+    margin: 5px;
+    transform: translateY(30px) translateX(-80px);
+    border-radius: 8px;
+}
+
+
+.menu p{
+    transform: translateX(-20px) translateY(-2px);
+}
+
+.catalogue p{
+    transform: translateY(-5px);
+}
+
+
+.catalogue-image{
+    height: 20px;
+    transform: translate(-40px, 35px);
+}
+
+.inStock{
+    position: relative;
+    margin-left: 20px;
+}
+
+.inStock p{
+    transform: translateY(-12px);
+}
+
+.shell{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 100,0);
+    border-radius: 50%;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.checkmark{
+    display: inline-block;
+}
+
+.checkmark .line:nth-child(1){
+    position: absolute;
+    transform: translate(3px, -33px) rotateZ(45deg); 
+    display: block;
+    height: 3px;
+    width: 7.5px;
+    opacity: 1;
+    background-color: rgb(0,155,0);
+}
+
+.checkmark .line:nth-child(2){
+    position: absolute;
+    transform: translate(5.5px,-36px) rotateZ(-45deg);
+    width: 15px;
+    height: 3px;
+    background-color: rgb(0,155,0);
+}
+
+.checkMark{
+    width: 30px;
+    height: 30px;
+    transform: translate(-50px,30px);
+}
+
+.inStock:hover .checkMark .shell{
+    opacity: 1;
+    background-color: rgb(0,205,0);
+}
+
+.inStock:hover .checkMark .line:nth-child(1),
+.inStock:hover .checkMark .line:nth-child(2){
+    background-color: white;
+}
+
+.newsAndPromotions{
+    height: 0px;
+}
+
+.newsAndPromotions p{
+    transform: translate(10px, -60px);
+}
+
+.newsAndPromotions:hover .ticket-circle{
+    opacity: 1;
+}
+
+.newsAndPromotions:hover .ticket .line:nth-child(1),
+.newsAndPromotions:hover .ticket .line:nth-child(2),
+.newsAndPromotions:hover .ticket .line:nth-child(3),
+.newsAndPromotions:hover .ticket .line:nth-child(4),
+.newsAndPromotions:hover .ticket .line:nth-child(5),
+.newsAndPromotions:hover .ticket .line:nth-child(6){
+    background-color: #fff;
+}
+
+.ticket-image{
+    transform: translate(-30px, 30px);
+}
+
+.ticket-circle{
+    background-color: green;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: .5;
+}
+
+.ticket{
+    display: inline-block;
+}
+
+.ticket .line:nth-child(1),
+.ticket .line:nth-child(2),
+.ticket .line:nth-child(3),
+.ticket .line:nth-child(4),
+.ticket .line:nth-child(5),
+.ticket .line:nth-child(6){
+    display: block;
+    height: 1.5px;
+    width: 15px;
+    background-color: rgb(0,255,0);
+    border-radius: 4px;
+}
+
+.ticket .line:nth-child(1){
+    transform: translate(0, -25px) rotateZ(-45deg);
+}
+
+.ticket .line:nth-child(2){
+    width: 8px;
+    transform: translate(8.5px,-33px) rotateZ(90deg);
+}
+
+.ticket .line:nth-child(3){
+    width: 7px;
+    transform: translate(12px,-35.5px) rotate(10deg);
+}
+
+.ticket .line:nth-child(4){
+    transform: translate(6px, -36.6px) rotate(-45deg);
+}
+
+.ticket .line:nth-child(5){
+    width: 8px;
+    transform: translate(2px, -46px);
+}
+
+.ticket .line:nth-child(6){
+    width: 8.5px;
+    transform: translate(5px,-49px) rotate(97deg);
+}
