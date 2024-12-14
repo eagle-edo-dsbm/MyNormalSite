@@ -208,7 +208,7 @@ header p{
     max-width: 140px;
 }
 
-@media (min-width: 400px) and (max-width: 1024px){
+@media (min-width: 400px) and (max-width: 2100px){
     body{
         margin: 0;
         padding: 0;
