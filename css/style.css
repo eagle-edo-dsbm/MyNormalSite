@@ -196,25 +196,13 @@ header p{
 .contacts{
     display: flex;
     gap: 20px;
-    transform: translate(0,20px);
+    transform: translate(-30px,20px);
 }
 
 .contacts p{
     cursor: pointer;
 }
 
-.contacts .dropdown:hover .myEmail{
-    opacity: 1;
-    color: white;
-}
-
-.myEmail{
-    opacity: 0;
-}
-
-.contacts p:hover{
-
-}
 
 .contacts-image{
     height: 30px;
