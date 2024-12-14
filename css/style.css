@@ -208,18 +208,17 @@ header p{
     max-width: 140px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        margin: 20px; /* Уменьшение внешних отступов */
+@media (min-width: 400px) and (max-width: 1024px){
+    body{
+        margin: 0;
+        padding: 0;
     }
 
-    .phone-number p {
-        font-size: 16px;
-        text-align: center; /* Центрирование номера телефона */
+    .menu{
+        display: block;
     }
 
-    header {
-        flex-wrap: wrap; /* Перенос элементов на следующую строку */
-        gap: 30px; /* Меньший промежуток между элементами */
+    .catalogue{
+        display: none;
     }
 }
