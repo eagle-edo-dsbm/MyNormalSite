@@ -206,3 +206,9 @@ header p{
 .phone-number p{
     max-width: 140px;
 }
+
+@media (max-width: 900px) and (max-height: 900px){
+    body{
+        min-width: 100vw;
+    }
+}
