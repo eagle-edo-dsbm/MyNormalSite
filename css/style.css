@@ -199,6 +199,23 @@ header p{
     transform: translate(0,20px);
 }
 
+.contacts p{
+    cursor: pointer;
+}
+
+.contacts .dropdown:hover .myEmail{
+    opacity: 1;
+    color: white;
+}
+
+.myEmail{
+    opacity: 0;
+}
+
+.contacts p:hover{
+
+}
+
 .contacts-image{
     height: 30px;
     transform: translateY(10px);
