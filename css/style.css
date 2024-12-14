@@ -221,4 +221,8 @@ header p{
     .catalogue{
         display: none;
     }
+
+    .contacts{
+        transform: translate(-30px, 18px);
+    }
 }
