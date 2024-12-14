@@ -225,4 +225,8 @@ header p{
     .contacts{
         transform: translate(-30px, 18px);
     }
+
+    .phone-number{
+        transform: translate(-30px, 0);
+    }
 }
