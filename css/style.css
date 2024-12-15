@@ -12,7 +12,6 @@ header{
     margin: 40px;
     color: white;
     height: 100px;
-    width: 100%;
     z-index: 1000;
     display: flex;
     gap: 60px;
@@ -277,21 +276,4 @@ header p{
 .product-image{
     height: 300px;
     width: auto;    
-}
-
-@media (max-width: 540px) {
-    body {
-        margin: 20px;
-        font-size: 14px; /* Adjust text size for readability */
-    }
-
-    header {
-        flex-wrap: wrap; /* Allow elements to stack */
-        gap: 20px;
-    }
-
-    .phone-number p {
-        font-size: 12px;
-        text-align: center; /* Align phone number properly */
-    }
 }
