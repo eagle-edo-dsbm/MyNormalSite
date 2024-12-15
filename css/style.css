@@ -230,7 +230,7 @@ header p{
     margin-left: 30px;
 }
 
-.product, .product1, .product2{
+.product, .product1, .product2, .product3, .product4, .product5{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -265,7 +265,19 @@ header p{
     box-shadow: 0 0 20px 5px rgb(0,200,200);
 }
 
-.product h1, .clubCard, .product2 h1{
+.product3:hover{
+    box-shadow: 0 0 20px 5px rgb(255,90,200);
+}
+
+.product4:hover{
+    box-shadow: 0 0 20px 5px rgb(0,130,200);
+}
+
+.product5:hover{
+    box-shadow: 0 0 20px 5px rgb(255,189,51);
+}
+
+.product h1, .clubCard, .product2 h1, .product3 h1, .product4 h1, .product5 h1{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -286,7 +298,18 @@ header p{
     color: white;
 }
 
-.product p, .product1 p, .product2 p{
+
+.product3 h1{
+    color: white;
+    font-size: 2em;
+}
+
+.product5 h1{
+    width: 300px;
+    font-size: 1.5em;
+}
+
+.product p, .product1 p, .product2 p, .product3 p, .product4 p, .product5 p{
     display: flex;
     flex-wrap: wrap;
     max-width: 280px;
@@ -300,7 +323,13 @@ header p{
     width: auto;    
 }
 
-.product-image1{
+.product-image2{
     height: 250px;
     width: auto;
+}
+
+.product-image5{
+    width: 70%;
+    margin: 60px;
+    height: 240px;
 }
