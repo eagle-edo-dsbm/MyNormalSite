@@ -333,3 +333,14 @@ header p{
     margin: 60px;
     height: 240px;
 }
+
+@media screen and (orientation: protrait) {
+    .products{
+        column-count: 2;
+        column-gap: 16px;
+    }
+
+    .product{
+        break-inside: avoid;
+    }
+}
