@@ -5,231 +5,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    background-color: black;
-    margin: 40px;
-    color: white;
-    height: 100px;
-    z-index: 1000;
-    display: flex;
-    gap: 60px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: rgb(150,170,150);
-}
-
-header p{
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.logo-image{
-    transform: translateY(-20%);
-    height: 150px;
-    width: auto;
-}
-
-.line{
-    display: block;
-    background-color: #fff;
-    height: 2px;
-    width: 25px;
-    margin: 5px;
-    transform: translateY(30px) translateX(-80px);
-    border-radius: 8px;
-}
-
-
-.menu p{
-    transform: translateX(-20px) translateY(-2px);
-}
-
-.catalogue p{
-    transform: translateY(-5px);
-}
-
-
-.catalogue-image{
-    height: 20px;
-    transform: translate(-40px, 35px);
-}
-
-.inStock{
-    position: relative;
-    margin-left: 20px;
-}
-
-.inStock p{
-    transform: translateY(-12px);
-}
-
-.shell{
-    height: 30px;
-    width: 30px;
-    background-color: rgb(0, 100,0);
-    border-radius: 50%;
-    opacity: .5;
-    pointer-events: none;
-}
-
-.checkmark{
-    display: inline-block;
-}
-
-.checkmark .line:nth-child(1){
-    position: absolute;
-    transform: translate(3px, -33px) rotateZ(45deg); 
-    display: block;
-    height: 3px;
-    width: 7.5px;
-    opacity: 1;
-    background-color: rgb(0,155,0);
-}
-
-.checkmark .line:nth-child(2){
-    position: absolute;
-    transform: translate(5.5px,-36px) rotateZ(-45deg);
-    width: 15px;
-    height: 3px;
-    background-color: rgb(0,155,0);
-}
-
-.checkMark{
-    width: 30px;
-    height: 30px;
-    transform: translate(-50px,30px);
-}
-
-.inStock:hover .checkMark .shell{
-    opacity: 1;
-    background-color: rgb(0,205,0);
-}
-
-.inStock:hover .checkMark .line:nth-child(1),
-.inStock:hover .checkMark .line:nth-child(2){
-    background-color: white;
-}
-
-.newsAndPromotions{
-    height: 0px;
-}
-
-.newsAndPromotions p{
-    transform: translate(10px, -60px);
-}
-
-.newsAndPromotions:hover .ticket-circle{
-    opacity: 1;
-}
-
-.newsAndPromotions:hover .ticket .line:nth-child(1),
-.newsAndPromotions:hover .ticket .line:nth-child(2),
-.newsAndPromotions:hover .ticket .line:nth-child(3),
-.newsAndPromotions:hover .ticket .line:nth-child(4),
-.newsAndPromotions:hover .ticket .line:nth-child(5),
-.newsAndPromotions:hover .ticket .line:nth-child(6){
-    background-color: #fff;
-}
-
-.ticket-image{
-    transform: translate(-30px, 30px);
-}
-
-.ticket-circle{
-    background-color: green;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    opacity: .5;
-}
-
-.ticket{
-    display: inline-block;
-}
-
-.ticket .line:nth-child(1),
-.ticket .line:nth-child(2),
-.ticket .line:nth-child(3),
-.ticket .line:nth-child(4),
-.ticket .line:nth-child(5),
-.ticket .line:nth-child(6){
-    display: block;
-    height: 1.5px;
-    width: 15px;
-    background-color: rgb(0,255,0);
-    border-radius: 4px;
-}
-
-.ticket .line:nth-child(1){
-    transform: translate(0, -25px) rotateZ(-45deg);
-}
-
-.ticket .line:nth-child(2){
-    width: 8px;
-    transform: translate(8.5px,-33px) rotateZ(90deg);
-}
-
-.ticket .line:nth-child(3){
-    width: 7px;
-    transform: translate(12px,-35.5px) rotate(10deg);
-}
-
-.ticket .line:nth-child(4){
-    transform: translate(6px, -36.6px) rotate(-45deg);
-}
-
-.ticket .line:nth-child(5){
-    width: 8px;
-    transform: translate(2px, -46px);
-}
-
-.ticket .line:nth-child(6){
-    width: 8.5px;
-    transform: translate(5px,-49px) rotate(97deg);
-}
-
-.contacts{
-    display: flex;
-    gap: 20px;
-    transform: translate(-30px,20px);
-}
-
-.contacts p{
-    cursor: pointer;
-}
-
-.email{
-    position: absolute;
-    transform: translate(50px,30px);
-    font-size: 1em;
-    text-transform: none;
-}
-
-.contacts-image{
-    height: 30px;
-    transform: translateY(10px);
-}
-
-.phone-number{
-    opacity: 0;
-}
-
-.phone-number p{
-    max-width: 140px;
-}
-
-.menu, .catalogue, .inStock, .newsAndPromotions, .contacts{
-    margin-left: 30px;
-}
-
 .product, .product1, .product2, .product3, .product4, .product5{
     display: flex;
     flex-direction: column;
@@ -334,3 +109,54 @@ header p{
     height: 240px;
 }
 
+#InStock .prodInStock{
+    color: white;
+    margin-top: 200px;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.product-preview{
+    display: flex;
+    color: white;
+    margin-left: 80px; 
+    margin-right: 80px;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.product-item{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.product-item p{
+    color: green;
+}
+
+.product-preview{
+    display: flex;
+}
+
+.showAll{
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgb(0,50,0);
+    font-weight: 700;
+    border: 1px solid green;
+    color: white;
+}
+
+.showAll:hover{
+    background-color: rgb(0,70,40);
+    transform: translateX(-50%) scale(.99);
+}
