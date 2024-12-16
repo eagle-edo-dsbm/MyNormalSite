@@ -336,11 +336,6 @@ header p{
 
 @media screen and (orientation: protrait) {
     .products{
-        column-count: 2;
-        column-gap: 16px;
-    }
-
-    .product{
-        break-inside: avoid;
+        flex: 1 1 calc(50% - 16px);
     }
 }
