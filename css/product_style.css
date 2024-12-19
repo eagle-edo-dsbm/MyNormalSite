@@ -1,0 +1,51 @@
+*{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-view{
+    font-size: 2em;
+}
+
+p, h1, h2{
+    color: white;
+}
+
+.product{
+    display: flex;
+    gap: 30px;
+}
+
+.photo{
+    width: auto;
+    height: 300px;
+}
+
+.buy{
+    margin-left: 20px;
+    border-radius: 4px;
+    border: 1px solid green;
+    padding: 15px 30px;
+    background-color: rgb(0,50,0);
+    color: white;
+    transition: .2s;
+}
+
+.buy:hover{
+    background-color: rgb(0,70,40);
+    transform: scale(1.05);
+}
+
+.close-modal {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: darkgreen;
+}

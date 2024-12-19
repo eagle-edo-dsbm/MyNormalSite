@@ -4,3 +4,4 @@ const dropdownMessage = document.querySelector('.dropdown-message');
 dropdown.addEventListener('click', function(){
     alert(dropdownMessage.textContent);
 });
+
