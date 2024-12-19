@@ -21,8 +21,12 @@ p, h1, h2{
     height: 300px;
 }
 
+.buttons{
+    display: flex;
+    gap: 50px;
+}
+
 .buy{
-    margin-left: 20px;
     border-radius: 4px;
     border: 1px solid green;
     padding: 15px 30px;
@@ -48,4 +52,8 @@ p, h1, h2{
 
 .close-modal:hover {
     background-color: darkgreen;
+}
+
+.in-stock{
+    color: green;
 }
