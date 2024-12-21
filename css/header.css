@@ -1,13 +1,14 @@
 header{
+    display: flex;
+    justify-content: end;
     position: sticky;
     top: 0;
-    background-color: black;
-    margin: 40px;
+    background-color: rgb(0,0,0);
     color: white;
     height: 100px;
+    width: 100%;
     z-index: 1000;
-    display: flex;
-    gap: 60px;
+    gap: 40px;
 }
 
 a{
@@ -25,8 +26,8 @@ header p{
 }
 
 .logo-image{
-    transform: translateY(-20%);
-    height: 150px;
+    transform: translateY(50%);
+    height: 50px;
     width: auto;
 }
 
@@ -36,7 +37,7 @@ header p{
     height: 2px;
     width: 25px;
     margin: 5px;
-    transform: translateY(30px) translateX(-80px);
+    transform: translateY(30px) translateX(-60px);
     border-radius: 8px;
 }
 
@@ -49,6 +50,9 @@ header p{
     transform: translateY(-5px);
 }
 
+.catalogue{
+    transform: translateX(-25%);
+}
 
 .catalogue-image{
     height: 20px;
@@ -220,5 +224,5 @@ header p{
 }
 
 .menu, .catalogue, .inStock, .newsAndPromotions, .contacts{
-    margin-left: 30px;
+    margin-left: 40px;
 }
