@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    fetch('../header.html')
+    fetch('../html/header.html')
     .then(response => {
         if(!response.ok) throw new Error('Ошибка загрузки хедера!');
         return response.text();
